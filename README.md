@@ -14,6 +14,18 @@ curl -v -X GET -u kuser:kpass -H "Content-Type: application/json" "http://localh
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
+http://localhost:8080/movie/fetchMovieInfo?apiName=omdb234234&movieTitle=titanic
+
+OUTPUT :    "{"key":"api.name.invalid","message":"API Name is Invalid"}"
+
+http://localhost:8080/movie/fetchMovieInfo?apiName=omdb&movieTitle=titanic345345345
+
+
+OUTPUT :   {"key":"movie.not.found","message":"Movie titanic345345345 Not Found"}
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
 Key Points:
 1. Basic functionality: 
 Write a single REST api which uses 2 different public APIs (http://www.omdbapi.com/ and https://www.themoviedb.org/documentation/api) to retrieve information about a given movie.
@@ -28,3 +40,5 @@ Expected output: A list of all matching movies, with year + director
 7. Modularity
 8. Readiablity 
 9. Program to interfaces
+10. Failure cases handled
+
