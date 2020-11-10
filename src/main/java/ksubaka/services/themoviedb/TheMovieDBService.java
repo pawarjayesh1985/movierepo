@@ -4,7 +4,7 @@ import feign.FeignException;
 import ksubaka.client.feign.TheMovieDBClient;
 import ksubaka.failures.PreDefinedErrorMessage;
 import ksubaka.interfaces.services.ITheMovieDBService;
-import ksubaka.view.omdb.MovieResponse;
+import ksubaka.view.response.MovieResponse;
 import ksubaka.view.themoviedb.Credits;
 import ksubaka.view.themoviedb.Crew;
 import ksubaka.view.themoviedb.Result;

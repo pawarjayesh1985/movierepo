@@ -1,12 +1,12 @@
 package ksubaka.services.movie;
 
 import ksubaka.constants.KsubakaConstants;
-import ksubaka.exceptions.ApiNameUnExpetedException;
+import ksubaka.exceptions.ApiNameUnexpectedException;
 import ksubaka.failures.PreDefinedErrorMessage;
 import ksubaka.interfaces.services.IOmdbApiClientService;
 import ksubaka.services.themoviedb.TheMovieDBService;
 import ksubaka.util.JsonUtils;
-import ksubaka.view.omdb.MovieResponse;
+import ksubaka.view.response.MovieResponse;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -46,7 +46,7 @@ public class MovieService {
 
     public void throwApiNameNotFoundException(String apiName) {
         String response = preDefinedErrorMessage.getAPINameIsInvalidMessage();
-        throw new ApiNameUnExpetedException(response);
+        throw new ApiNameUnexpectedException(response);
     }
 
 

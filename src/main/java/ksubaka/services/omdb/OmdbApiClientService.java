@@ -2,11 +2,10 @@ package ksubaka.services.omdb;
 
 import feign.FeignException;
 import ksubaka.client.feign.OmdbApiClient;
-import ksubaka.exceptions.MovieNotFoundException;
 import ksubaka.failures.PreDefinedErrorMessage;
 import ksubaka.interfaces.services.IOmdbApiClientService;
 import ksubaka.view.omdb.Movie;
-import ksubaka.view.omdb.MovieResponse;
+import ksubaka.view.response.MovieResponse;
 import org.apache.commons.collections4.ListUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;

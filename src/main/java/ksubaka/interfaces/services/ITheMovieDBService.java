@@ -1,6 +1,6 @@
 package ksubaka.interfaces.services;
 
-import ksubaka.view.omdb.MovieResponse;
+import ksubaka.view.response.MovieResponse;
 
 import java.util.List;
 

@@ -20,7 +20,6 @@ public class MovieController {
     @RequestMapping(value = "/fetchMovieInfo", method = RequestMethod.GET)
     public String getMovieInformation(@RequestParam(value = "apiName") String apiName,
                                       @RequestParam(value = "movieTitle") String movieTitle) {
-        //throw new RuntimeException("something went wrong...");
         return movieService.getMovieInfo(apiName, movieTitle);
     }
 }
