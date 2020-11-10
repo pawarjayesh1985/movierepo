@@ -12,6 +12,8 @@ The Movie DB command:
 
 curl -v -X GET -u kuser:kpass -H "Content-Type: application/json" "http://localhost:8080/movie/fetchMovieInfo?apiName=themoviedb&movieTitle=titanic"
 
+<Please Note: I have noticed that there is connection timeout happening for this API themoviedb>
+
 ------------------------------------------------------------------------------------------------------------------------------------------
 
 http://localhost:8080/movie/fetchMovieInfo?apiName=omdb234234&movieTitle=titanic
