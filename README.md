@@ -3,10 +3,13 @@ This repo fetches the information from 2 separate apis  based on the api name an
 ------------------------------------------------------------------------------------------------------------------------------------------
 
 OMDB command:
+
+
 curl -v -X GET -u kuser:kpass -H "Content-Type: application/json" "http://localhost:8080/movie/fetchMovieInfo?apiName=omdb&movieTitle=titanic"
 
 
 The Movie DB command:
+
 curl -v -X GET -u kuser:kpass -H "Content-Type: application/json" "http://localhost:8080/movie/fetchMovieInfo?apiName=themoviedb&movieTitle=titanic"
 
 ------------------------------------------------------------------------------------------------------------------------------------------
