@@ -9,6 +9,7 @@ How to run the application:
 
 curl -v -X GET -u kuser:kpass -H "Content-Type: application/json" "http://localhost:8080/movie/fetchMovieInfo?apiName=omdb&movieTitle=titanic"
 
+{ Starting/Entry reference classes : KsukabaStarter, MovieService }
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
