@@ -20,8 +20,8 @@ Write a single REST api which uses 2 different public APIs (http://www.omdbapi.c
 There should be two parameters: one to specify which API is to be used and one to specify the movie title
 Expected output: A list of all matching movies, with year + director
 
-2. Basic security:
-3. Exception/errorhandling
+2. Basic security: Reference code:  CustomBasicAuthenticationEntryPoint,SecurityConfig
+3. Exception/errorhandling: ApiNameUnexpectedException,KsubakaControllerAdvice, MovieNotFoundException, KsubakaBaseException etc
 4. Sample Integration Test case and Mockito test cases
 5. Properties are configuration driven for production
 6. Logback support
