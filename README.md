@@ -43,9 +43,7 @@ OUTPUT :   {"key":"movie.not.found","message":"Movie titanic345345345 Not Found"
 
 
 Key Points:
-1. Basic functionality: 
-Write a single REST api which uses 2 different public APIs (http://www.omdbapi.com/ and https://www.themoviedb.org/documentation/api) to retrieve information about a given movie.
-There should be two parameters: one to specify which API is to be used and one to specify the movie title
+1. Basic functionality: A single REST api which uses 2 different public APIs (http://www.omdbapi.com/ and https://www.themoviedb.org/documentation/api) to retrieve information  about a given movie. There should be two parameters: one to specify which API is to be used and one to specify the movie title
 Expected output: A list of all matching movies, with year + director
 
 2. Basic security: Reference code:  CustomBasicAuthenticationEntryPoint,SecurityConfig
