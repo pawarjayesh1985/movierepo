@@ -1,5 +1,17 @@
 # movierepo
-This repo fetches the information from 2 separate apis  based on the api name and movie title
+------------------------------------------------------------------------------------------------------------------------------------------
+How to run the application:
+1. Download the repository code
+2. mvn clean install
+3. java -jar ksubaka-1.0-RELEASE.jar
+4. Notic the port in the logs
+5. Try the following url from another console.
+
+curl -v -X GET -u kuser:kpass -H "Content-Type: application/json" "http://localhost:8080/movie/fetchMovieInfo?apiName=omdb&movieTitle=titanic"
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
 ------------------------------------------------------------------------------------------------------------------------------------------
 
 OMDB command:
