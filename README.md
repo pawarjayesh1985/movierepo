@@ -14,7 +14,7 @@ curl -v -X GET -u kuser:kpass -H "Content-Type: application/json" "http://localh
 ------------------------------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------------------------
-
+{Sample command}
 OMDB command:
 
 
@@ -29,6 +29,7 @@ curl -v -X GET -u kuser:kpass -H "Content-Type: application/json" "http://localh
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
+{Negative sample output}
 http://localhost:8080/movie/fetchMovieInfo?apiName=omdb234234&movieTitle=titanic
 
 OUTPUT :    "{"key":"api.name.invalid","message":"API Name is Invalid"}"
