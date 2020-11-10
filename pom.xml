@@ -6,6 +6,7 @@
 
     <groupId>com.ksubaka</groupId>
     <artifactId>ksubaka</artifactId>
+    <packaging>jar</packaging>
     <version>1.0-RELEASE</version>
 
     <!-- TODO : Need to clean up-->
@@ -15,9 +16,9 @@
         <java.version>1.8</java.version>
         <slf4jVersion>1.7.22</slf4jVersion>
         <maven.compiler.plugin.version>3.6.1</maven.compiler.plugin.version>
-
         <!-- Mockito test case -->
         <mockito.version>1.10.19</mockito.version>
+        <start-class>ksubaka.KsukabaStarter</start-class>
     </properties>
 
     <parent>
@@ -151,6 +152,10 @@
                     <showWarnings>true</showWarnings>
                     <showDeprecation>true</showDeprecation>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
